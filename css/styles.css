@@ -1,0 +1,86 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+/* Declaración de variables */
+:root {
+    --bgColor:#312ac6;
+    --textColor:#fff;
+    --titleFont: 900;
+    --textFont:400;
+    --btnFont:700;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+body {
+    background-color: var(--bgColor);
+    color: var(--textColor);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.landing{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+   
+}
+
+.landing__img--txt{
+    padding-left: 4rem;
+    padding-top: 2rem;
+    width: 45%;
+    margin-bottom: 5rem;
+}
+
+.landing__logo--bg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../img/fondo.png");
+    
+    
+    background-size: cover;
+   
+    
+    
+}
+.landing__logo--img{
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    margin-bottom: 5rem;
+   
+    
+}
+
+.landing__title{
+    font-weight: var(--titleFont);
+}
+.landing__txt{
+   font-weight: var(--textFont);
+}
+
+.landing__btn{
+    margin-top: 2rem;
+    text-decoration: none;
+    background-color:var(--textColor);
+    color: var(--bgColor);
+    width: 50%;
+    align-self: center;
+    padding: 0.8rem 0rem;
+    border-radius: 5rem;
+    font-weight: var(--btnFont);
+    font-size: 1.2rem;
+}
